@@ -3,6 +3,6 @@ class Portfolio < ActiveRecord::Base
   accepts_nested_attributes_for :contact_info
     
   after_update do |obj|
-    puts "AFTER_UPDATE #{obj.id}"
+    puts "AFTER_UPDATE"
   end
 end
